@@ -1,6 +1,6 @@
 # Welcome to the Hopper Project for Gazebo using ROS Developement Studio!
 
-![Hopper-Img](img/hopper.jpg)
+![Hopper-Img](img/hopper.png)
 
 In this repo you will find all the code that we generate for the Project tutorials.
 
