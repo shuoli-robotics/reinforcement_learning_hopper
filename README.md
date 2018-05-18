@@ -9,4 +9,4 @@ Please feel free to make any comments and make any sugestion that you find its r
 In this tutorials you will find step by step how we gt to have the code that you can find here.
 The tutorials were created with the Web BAsed Online ROS developement environment [ROSDevelopementStudio](http://www.theconstructsim.com/rds-ros-development-studio/).
 
- [Video-Tutorial-1](https://www.youtube.com/watch?v=wgJG2Xp8FZA&t=1096s) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+ [Video-Tutorial-1-Create-RobotModel_Part1](https://www.youtube.com/watch?v=wgJG2Xp8FZA&t=1096s)
