@@ -6,7 +6,8 @@
 
   <node name="robot_state_publisher_monoped" pkg="robot_state_publisher" type="robot_state_publisher"
         respawn="false" output="screen">
-            <param name="publish_frequency" type="double" value="20.0" />
+            <param name="publish_frequency" type="double" value="30.0" />
+            <param name="ignore_timestamp" type="bool" value="true" />
             <param name="tf_prefix" type="string" value="monoped" />
             <remap from="/joint_states" to="/monoped/joint_states" />
         </node>
