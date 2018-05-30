@@ -36,8 +36,8 @@
 	      <geometry>
 	        <box size="0.20 0.20 0.30"/>
 	      </geometry>
-	      <material name="blue">
-	        <color rgba="0 0 1.0 1.0"/>
+	      <material name="red">
+	        <color rgba="1.0 0 0 1.0"/>
 	      </material>
 	    </visual>
     </link>
@@ -47,7 +47,7 @@
         <kd>1000.0</kd>
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
-        <material>Gazebo/Green</material>
+        <material>Gazebo/Red</material>
     </gazebo>
 
     <link name="hipassembly">
