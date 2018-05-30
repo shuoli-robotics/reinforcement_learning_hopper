@@ -8,8 +8,8 @@
 <launch>
 
     <!-- Load the parameters for the algorithm -->
-    <rosparam command="load" file="$(find hopper_training)/config/qlearn_params.yaml" />
+    <rosparam command="load" file="$(find my_hopper_training)/config/qlearn_params.yaml" />
 
     <!-- Launch the training system -->
-    <node pkg="hopper_training" name="monoped_gym" type="start_training_v2.py" output="screen"/>
+    <node pkg="my_hopper_training" name="monoped_gym" type="start_training_v2.py" output="screen"/>
 </launch>
