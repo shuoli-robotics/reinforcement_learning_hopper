@@ -59,13 +59,13 @@
         <collision>
             <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
 	      </geometry>
         </collision>
 	    <visual>
 	      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
 	      </geometry>
 	      <material name="white"/>
 	    </visual>
@@ -89,13 +89,13 @@
         <collision>
             <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
 	      </geometry>
         </collision>
 	    <visual>
 	      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
 	      </geometry>
 	      <material name="blue"/>
 	    </visual>
@@ -119,12 +119,12 @@
         <collision>
             <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
 	      </geometry>
         </collision>
 	    <visual>
 	      <geometry>
-	        <mesh filename="package://legged_robots_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
+	        <mesh filename="package://my_legged_robots_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
 	      </geometry>
 	      <material name="blue"/>
 	    </visual>
