@@ -18,3 +18,9 @@ The tutorials were created with the Web BAsed Online ROS developement environmen
  You have to do the following:
  1) git clone https://github.com/leggedrobotics/xpp.git # you need some elements from here
  2) catkin_make # This will build some custom messages
+ 
+ # How to launch
+ You have to launch the simulation
+ $roslaunch legged_robots_sims main.launch
+ And the training launch
+ $roslaunch hopper_training main.launch
