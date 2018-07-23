@@ -9,7 +9,6 @@ project(legged_robots_sims)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
-  xpp_hyq
 )
 
 ## System dependencies are found with CMake's conventions
@@ -104,7 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES legged_robots_sims
-#  CATKIN_DEPENDS rospy xpp_hyq
+#  CATKIN_DEPENDS rospy
 #  DEPENDS system_lib
 )
 
