@@ -17,6 +17,7 @@
     </include>
 
     <include file="$(find legged_robots_sims)/launch/spawn_monoped_2D.launch"/>
+    <include file="$(find legged_robots_sims)/launch/monoped_control.launch"/>
 
 
 </launch>

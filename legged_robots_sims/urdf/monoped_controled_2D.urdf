@@ -107,10 +107,12 @@
     </link>
 	
 	
-    <joint name="contactsensor_world_link_joint" type="fixed">
+    <joint name="contactsensor_world_link_joint" type="revolute">
         <parent link="world"/>
         <child link="contactsensor_link"/>
-        <origin xyz="0 0 0.03" rpy="0.7 1.57 0"/>
+        <origin xyz="0 0 0.03" rpy="0.0 1.57 0"/>
+        <limit effort="20" lower="-1.57" upper="1.57" velocity="12.0"/>
+        <axis xyz="0 0 1"/>
     </joint>
     
     <joint name="lowerleg_contactsensor_link_joint" type="fixed">
@@ -140,7 +142,8 @@
         <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
         <parent link="hipassembly"/>
         <child  link="base"/>
-        <limit effort="20" lower="-1.6" upper="1.6" velocity="12.0"/>
+        <!--<limit effort="20" lower="-1.6" upper="1.6" velocity="12.0"/>-->
+        <limit effort="20" lower="0.0" upper="0.0" velocity="12.0"/>
         <axis xyz="0 0 1"/>
     </joint>
     
@@ -187,20 +190,7 @@
     </gazebo>
     
     <!-- Sensors -->
-    <!-- IMU sensor -->
-    <gazebo>
-        <plugin name="gazebo_ros_imu_controller" filename="libgazebo_ros_imu.so">
-          <robotNamespace>/monoped</robotNamespace>
-          <topicName>imu/data</topicName>
-          <serviceName>imu/service</serviceName>
-          <bodyName>base</bodyName>
-          <gaussianNoise>0</gaussianNoise>
-          <rpyOffsets>0 0 0</rpyOffsets>
-          <!--<updateRate>50.0</updateRate>-->
-          <alwaysOn>true</alwaysOn>
-          <gaussianNoise>0</gaussianNoise>
-        </plugin>
-    </gazebo>
+    
     
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
@@ -220,6 +210,56 @@
             <rpyOffsets>0 0 0</rpyOffsets>
         </plugin>
     </gazebo>
+    
+    <!-- IMU sensor -->
+    <gazebo>
+        <plugin name="gazebo_ros_imu_controller" filename="libgazebo_ros_imu.so">
+          <robotNamespace>/monoped</robotNamespace>
+          <topicName>imu/data</topicName>
+          <serviceName>imu/service</serviceName>
+          <bodyName>base</bodyName>
+          <gaussianNoise>0</gaussianNoise>
+          <rpyOffsets>0 0 0</rpyOffsets>
+          <!--<updateRate>50.0</updateRate>-->
+          <alwaysOn>true</alwaysOn>
+          <gaussianNoise>0</gaussianNoise>
+        </plugin>
+    </gazebo>
+    
+    
+    
+    <transmission name="haa_joint_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="haa_joint">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="haa_jointMotor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="hfe_joint_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="hfe_joint">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="hfe_jointMotor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="kfe_joint_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="kfe_joint">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="kfe_jointMotor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
     
 
 </robot>
