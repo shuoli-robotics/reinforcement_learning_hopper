@@ -12,7 +12,7 @@
       <ode>
         <solver>
           <type>quick</type>
-          <iters>100</iters>
+          <iters>500</iters>
         </solver>
       </ode>
     </physics>
