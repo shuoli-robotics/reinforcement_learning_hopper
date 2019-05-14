@@ -1,0 +1,16 @@
+/clicked_point
+/initialpose
+/move_base_simple/goal
+/towr/user_command
+/xpp/goal
+/xpp/joint_biped_des
+/xpp/joint_hyq_des
+/xpp/joint_mono_des
+/xpp/joint_quadrotor_des
+/xpp/params
+/xpp/rviz_markers
+/xpp/state_curr >> No publica nadie
+/xpp/state_des >> Publica rosbag generado
+/xpp/terrain >> rviz_terrain_publisher
+/xpp/terrain_info >> Publica rosbag generado
+/xpp/trajectory_des >> towr_ros 

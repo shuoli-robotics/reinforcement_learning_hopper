@@ -1,0 +1,42 @@
+$catkin_make -DCMAKE_BUILD_TYPE=Release
+
+-- ==> add_subdirectory(towr/towr_core)
+CMake Error at towr/towr_core/CMakeLists.txt:7 (find_package):
+  By not providing "Findifopt_core.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "ifopt_core", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ifopt_core" with
+  any of the following names:
+
+    ifopt_coreConfig.cmake
+    ifopt_core-config.cmake
+
+  Add the installation prefix of "ifopt_core" to CMAKE_PREFIX_PATH or set
+  "ifopt_core_DIR" to a directory containing one of the above files.  If
+  "ifopt_core" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/rdaneel/catkin_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/home/rdaneel/catkin_ws/build/CMakeFiles/CMakeError.log".
+Invoking "cmake" failed
+
+
+$catkin_make run_tests
+[  PASSED  ] 1 test.
+-- run_tests.py: verify result "/home/rdaneel/catkin_ws/build/test_results/turtlebot_description/gtest-turtlebot_description_test_urdf.xml"
+Exception of type: OPTION_INVALID in file "/home/rdaneel/catkin_ws/src/LOCO/CoinIpopt/Ipopt/src/Algorithm/IpAlgBuilder.cpp" at line 271:
+ Exception message: Selected linear solver MA27 not available.
+Tried to obtain MA27 from shared library "libhsl.so", but the following error occured:
+libhsl.so: cannot open shared object file: No such file or directory
+
+EXIT: Invalid option encountered.
+Ipopt failed to find a solution. ReturnCode: -12Running main() from gtest_main.cc
+0.5 1.5
+
+
+
+
+
