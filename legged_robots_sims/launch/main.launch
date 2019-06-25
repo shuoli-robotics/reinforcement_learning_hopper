@@ -16,10 +16,13 @@
         <env name="GAZEBO_MODEL_PATH" value="$(find legged_robots_sims)/models:$(optenv GAZEBO_MODEL_PATH)"/>
     </include>
 
+
+    <include file="$(find legged_robots_sims)/launch/put_robot_in_world.launch"/>
+
+    <!--
     <include file="$(find legged_robots_sims)/launch/spawn_monoped.launch"/>
     <include file="$(find legged_robots_sims)/launch/monoped_control.launch"/>
+    -->
 
-    <!--<include file="$(find legged_robots_sims)/launch/world_to_base_tf_publish.launch"/>-->
-    <!--<include file="$(find towr_ros)/launch/towr_ros.launch"/>-->
 
 </launch>
