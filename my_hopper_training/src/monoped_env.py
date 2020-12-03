@@ -20,7 +20,8 @@ from controllers_connection import ControllersConnection
 reg = register(
     id='Monoped-v0',
     entry_point='monoped_env:MonopedEnv',
-    timestep_limit=50,
+    #timestep_limit=50,
+    max_episode_steps=50,
     )
 
 

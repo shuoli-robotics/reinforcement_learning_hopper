@@ -1,2 +1,0 @@
-std_msgs/String state_tag
-std_msgs/Int32 action_number
